@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'docker-agent-with-python'
+    }
 
     environment {
         IMAGE_NAME = "my-flask-app"
